@@ -1,0 +1,28 @@
+<html >
+    <head>
+        <meta charset="UTF-8" />
+        <title>Programação Estruturada - Aula 05</title>
+    </head>
+    <body>
+        <h1>Exercício - 01</h1>
+        <button onclick="f()">Rodar Programa</button>
+        <p id="d"></p>
+        <script>
+            //linha alterada com a retirada do use strict
+            function f(){
+                const a = "";
+                var b = 1; //mudança de const para var
+                var c = a + b + "<br />"; //mudança de const para var
+                b++;
+                c = c + a + b + "<br />";
+                b++; // mudança de + para ++
+                c = c + a + b + "<br />";
+                b++; // mudança de + para ++
+                c = c + a + b + "<br />";
+                b++; // mudança para ++
+                c = c + a + b + "<br />";
+                document.getElementById("d").innerHTML = c;
+            }
+        </script>
+    </body>
+</html>
