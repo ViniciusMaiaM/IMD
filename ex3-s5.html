@@ -1,0 +1,22 @@
+<html>
+    <head>
+    <meta charset="UTF-8" />
+        <title>Programação Estruturada</title>
+    </head>
+    <body>
+        <button onclick='executarExercicio()'>OK</button>
+        Entrada Data: 
+        <input id="data" type="date"><br />
+        <p id="resultado"></p>
+        <script>
+            function executarExercicio() {
+                var data = new Date(document.getElementById("data").value);
+                var nova_data = new Date();
+                var conv = nova_data.getTime() - data.getTime();
+                var idade = new Date(conv);
+                var ano = Math.abs(idade.getUTCFullYear()- 1970);
+                document.getElementById('resultado').innerHTML = ano;
+            }
+        </script>   
+    </body>
+</html>
