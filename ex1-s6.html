@@ -8,26 +8,7 @@
             N1: <input type="number" id="valor" value=""><br />
             <button onclick='executarExercicio()'>OK</button>
         <p id="resultado"></p>
-        <script>
-            function executarExercicio() {
-                var a = Number(document.getElementById('valor').value);
-                var r = '';
-                
-                if(a == 0){
-                    r = "O valor é zero";
-                }
-
-                else if(a > 0){
-                    r = "O valor é posítivo";
-                }
-
-                else{
-                    r = "O valor é negativo";
-                }
-                
-                document.getElementById('resultado').innerHTML = r;
-            }
-        </script>
+        <script src="ex6-s6.js"></script>
     </body>
 </html>
 
