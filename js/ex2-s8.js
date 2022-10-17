@@ -1,8 +1,6 @@
 function executarExercicio() {
-    // implemente a partir daqui
     var array = [];
-    // Exemplo de comando de entrada
-    var r = rodar(array); // atribua o resultado dos seus algoritmos a r
+    var r = rodar(array); 
     document.getElementById('resultado').innerHTML = r;
 }
 
