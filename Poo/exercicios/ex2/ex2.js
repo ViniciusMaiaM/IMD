@@ -1,5 +1,8 @@
 var ContaCorrente = /** @class */ (function () {
-    function ContaCorrente() {
+    function ContaCorrente(nome_correntista, cpf_correntista, saldo) {
+        this.nome_correntista = nome_correntista;
+        this.cpf_correntista = cpf_correntista;
+        this.saldo = saldo;
     }
     ContaCorrente.prototype.setNome = function (nome) {
         this.nome_correntista = nome;
@@ -21,7 +24,7 @@ var ContaCorrente = /** @class */ (function () {
     };
     return ContaCorrente;
 }());
-var c = new ContaCorrente;
+var c = new ContaCorrente("Vinicius", "213443312", 1233);
 c.setNome("Vinicius");
 c.setCpf("1234123123");
 c.setSaldo(1234);

@@ -3,6 +3,13 @@ class ContaCorrente{
     cpf_correntista: string;
     saldo: number;
 
+
+    constructor(nome_correntista:string,cpf_correntista:string,saldo:number){
+        this.nome_correntista = nome_correntista;
+        this.cpf_correntista = cpf_correntista;
+        this.saldo = saldo;
+    }
+
     setNome(nome:string){
         this.nome_correntista = nome;
     }
@@ -30,7 +37,7 @@ class ContaCorrente{
 }
 
 
-let c = new ContaCorrente;
+let c = new ContaCorrente("Vinicius","213443312",1233);
 c.setNome("Vinicius")   
 c.setCpf("1234123123")
 c.setSaldo(1234)
