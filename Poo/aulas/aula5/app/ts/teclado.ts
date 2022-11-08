@@ -23,6 +23,6 @@ export class Keyboard{
     }
 
     public detalhar(){
-        console.log(`Switch:${this._tipe_switch} \nKey: ${this._num_key}`)
+        console.log(`\nSwitch:${this._tipe_switch} \nKey: ${this._num_key}`)
     }
 }

@@ -69,7 +69,7 @@ export class Monitor{
     }
 
     public detalhar(){
-        console.log(`HZ:${this._hz} \nName: ${this._name} 
+        console.log(`\nHZ:${this._hz} \nName: ${this._name} 
         \nBrand: ${this._brand} \nInput:${this._num_input}`)
     }
 }  

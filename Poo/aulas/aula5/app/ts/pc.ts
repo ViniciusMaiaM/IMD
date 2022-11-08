@@ -35,8 +35,8 @@ export class Computer{
     }
 
     public detalhar(){
-        console.log(`Monitor:${this.monitor.detalhar()} 
-        \nKeyboard: ${this.keyboard.detalhar()}`)
+        console.log(`Monitor:${this._monitor.detalhar()} 
+        \nKeyboard: ${this._keyboard.detalhar()}`)
     }
 
 }

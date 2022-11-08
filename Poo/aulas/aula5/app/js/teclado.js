@@ -22,7 +22,7 @@ var Keyboard = /** @class */ (function () {
         configurable: true
     });
     Keyboard.prototype.detalhar = function () {
-        console.log("Switch:".concat(this._tipe_switch, " \nKey: ").concat(this._num_key));
+        console.log("\nSwitch:".concat(this._tipe_switch, " \nKey: ").concat(this._num_key));
     };
     return Keyboard;
 }());

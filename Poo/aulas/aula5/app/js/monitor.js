@@ -72,7 +72,7 @@ var Monitor = /** @class */ (function () {
         configurable: true
     });
     Monitor.prototype.detalhar = function () {
-        console.log("HZ:".concat(this._hz, " \nName: ").concat(this._name, " \n        \nBrand: ").concat(this._brand, " \nInput:").concat(this._num_input));
+        console.log("\nHZ:".concat(this._hz, " \nName: ").concat(this._name, " \n        \nBrand: ").concat(this._brand, " \nInput:").concat(this._num_input));
     };
     return Monitor;
 }());

@@ -33,7 +33,7 @@ var Computer = /** @class */ (function () {
         configurable: true
     });
     Computer.prototype.detalhar = function () {
-        console.log("Monitor:".concat(this.monitor.detalhar(), " \n        \nKeyboard: ").concat(this.keyboard.detalhar()));
+        console.log("Monitor:".concat(this._monitor.detalhar(), " \n        \nKeyboard: ").concat(this._keyboard.detalhar()));
     };
     return Computer;
 }());
