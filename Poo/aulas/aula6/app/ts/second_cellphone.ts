@@ -48,6 +48,10 @@ export class CameraCellphone extends Cellphone{
             console.log("Your flashlight is of!");
         }
     }
+    // let c = new CameraCellphone("LG",50,2,1);
+    // c.detail();
+    // c.photograph(true); 
+    // c.flashlight(false);
 
     public detail(): void {
         super.detail();
@@ -56,7 +60,8 @@ export class CameraCellphone extends Cellphone{
     }
 }
 
-let c = new CameraCellphone("LG",50,2,1);
-c.detail();
-c.photograph(true);
-c.flashlight(false);
+// let c = new CameraCellphone("LG",50,2,1);
+// c.detail();
+// c.photograph(true); 
+// c.flashlight(false);
+

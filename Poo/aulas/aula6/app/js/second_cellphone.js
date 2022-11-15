@@ -58,6 +58,10 @@ var CameraCellphone = /** @class */ (function (_super) {
             console.log("Your flashlight is of!");
         }
     };
+    // let c = new CameraCellphone("LG",50,2,1);
+    // c.detail();
+    // c.photograph(true); 
+    // c.flashlight(false);
     CameraCellphone.prototype.detail = function () {
         _super.prototype.detail.call(this);
         console.log("\n        Camera: ".concat(this._camera));
@@ -65,7 +69,7 @@ var CameraCellphone = /** @class */ (function (_super) {
     return CameraCellphone;
 }(base_cellphone_1.Cellphone));
 exports.CameraCellphone = CameraCellphone;
-var c = new CameraCellphone("LG", 50, 2, 1);
-c.detail();
-c.photograph(true);
-c.flashlight(false);
+// let c = new CameraCellphone("LG",50,2,1);
+// c.detail();
+// c.photograph(true); 
+// c.flashlight(false);
