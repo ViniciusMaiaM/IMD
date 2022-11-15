@@ -4,12 +4,15 @@
 // as suas inicializações antes mesmo que todas as suas classes filhas
 
 export class Cellphone{
+    protected _brand:string;
     protected _battery: number;
     protected _chip: number;
 
-    public constructor(battery?: number, chip?: number){
+    public constructor(brand:string,battery: number, chip?: number){
+        this._brand = brand;
         this._battery = battery;
         this._chip = chip;
+
 
         if(battery == undefined || battery < 0){
             this._battery = 100;
@@ -67,10 +70,8 @@ export class Cellphone{
 
     public detail(){
         console.log(`
+        Brand: ${this._brand}
         Battery: ${this._battery}
         Chip(s): ${this._chip}`)
     }
 }
-
-let c = new Cellphone();
-c.detail();

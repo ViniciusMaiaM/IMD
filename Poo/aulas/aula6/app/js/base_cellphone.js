@@ -6,7 +6,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Cellphone = void 0;
 var Cellphone = /** @class */ (function () {
-    function Cellphone(battery, chip) {
+    function Cellphone(brand, battery, chip) {
+        this._brand = brand;
         this._battery = battery;
         this._chip = chip;
         if (battery == undefined || battery < 0) {
@@ -63,10 +64,8 @@ var Cellphone = /** @class */ (function () {
         configurable: true
     });
     Cellphone.prototype.detail = function () {
-        console.log("\n        Battery: ".concat(this._battery, "\n        Chip(s): ").concat(this._chip));
+        console.log("\n        Brand: ".concat(this._brand, "\n        Battery: ").concat(this._battery, "\n        Chip(s): ").concat(this._chip));
     };
     return Cellphone;
 }());
 exports.Cellphone = Cellphone;
-var c = new Cellphone();
-c.detail();

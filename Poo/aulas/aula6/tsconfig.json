@@ -6,6 +6,6 @@
     },
 
     "include": [
-        "app/ts/"
+        "app/ts/*"
     ]
 }
